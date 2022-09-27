@@ -15,6 +15,14 @@ window.submitf = () => {
         sponsor: getValue("sponsor")
     }
 
+    const perusahaan = {
+        nama: getValue("namaP"),
+        alamat: getValue("alamatP"),
+        kontak: getValue("kontakP"),
+        noTelp: getValue("noTelpP"),
+        email: getValue("emailP")
+    }
+
     if(isInputBlank(peserta) || isInputBlank(perusahaan)) 
         return;
 

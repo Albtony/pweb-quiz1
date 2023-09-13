@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PosSearch</title>
+    <title>Formulir Online</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
@@ -9,9 +9,9 @@
     <script type="module" src="main.js"></script>
 </head>
 <body>
-    <div class="my10vh column">
+    <form class="column">
         <p class="headtitle">Formulir Registrasi</p>
-        <div id="peserta" class="column">
+        <div id="peserta" class="column mbot15px">
             <p class="title">Peserta</p>
             <div class="row">
                 <p class="field-name">Nama</p>
@@ -42,7 +42,7 @@
                 <input id="sponsor" type="text" class="input-field" placeholder="Sponsor Peserta">    
             </div>
         </div>
-        <div id="perusahaan" class="column">
+        <div id="perusahaan" class="column mbot15px">
             <p class="title">Perusahaan</p>
             <div class="row">
                 <p class="field-name">Nama</p>
@@ -68,13 +68,15 @@
         <div class="align-right">
             <button type="submit" class="submit-button" onclick="submitf()">Daftar</button>
         </div>
+    </form>
+    <article class="column">
         <div id="instruksi-kontribusi" class="column" style="margin-top: 20px;">
             <p>Kontribusi peserta Rp. 2.500.000,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi</p>
             <p>Konfirmasi Kepesertaan:</p>
             <ul>
-                <li> Sebelum 15 Januari 2012: Rp. 2.500.000,-
-                <li> Sesudah 15 Januari 2012: Rp. 2.750.000,-
-                <li> Onsite: Rp. 2.750.000,-
+                <li> Sebelum 15 Januari 2024: Rp. 2.500.000,-
+                <li> Sesudah 15 Januari 2024: Rp. 2.750.000,-
+                <li> On-site: Rp. 2.750.000,-
             </ul>
             <p>Pembatalan Pendaftaran:</p>
             <ul>
@@ -91,13 +93,17 @@
                 </ul>
             </strong>
         </div>
+    </article>
+    <aside class="column">
         <div id="instruksi-pembayaran" class="card">
             <p>Bukti transer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskesma Sitopeng</p>
             <p>Alamat:</p>
             <p>Jl. Sekarsari No.1 Argasurya Harjamukti Kota Cirebon atau kirim ke email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=entreprenurse41@gmail.com&su=Bukti Transfer Registrasi&body=">entreprenurse41@gmail.com</a></p>
             <p>Konfirmasi setelah transfer ke 0818242869</p>
         </div>  
+    </aside>
+    <footer class="column">
         <p class="align-right">&copy Nuzul Abatony</p>
-    </div>
+    </footer>
 </body>
 </html>

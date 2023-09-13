@@ -1,7 +1,8 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 10px;
 }
 
 body {
@@ -11,7 +12,12 @@ body {
 }
 
 p, ul {
-  margin: 5px 0;
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+li, input {
+  font-size: 1.6rem;
 }
 
 div {
@@ -19,63 +25,64 @@ div {
 }
 
 a, a:visited, a:active, a:link {
+  font-size: 1.8rem;
   color: #007bff;
   text-decoration: none;
   font-weight: 400;
 }
 
 article, footer, main, aside, header {
-    display: flex;
-    color: #FFF;
-    margin: 0;
-    padding: 0 30vw;
-    align-items: center;
+  display: flex;
+  color: #FFF;
+  margin: 0;
+  padding: 0 20vw;
+  align-items: center;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .headtitle {
-    color: #FFF;
-    font-size: 40px;
-    font-weight: 600;
-    margin: 10px 0;
-    width: inherit;
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px 0;
+  width: inherit;
 }
 
 .title {
-    color: #FFF;
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0 0 5px 0;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 0 5px 0;
 }
 
 .field-name {
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 8px 20px 8px 0;
-    width: 25%;
+  color: #FFF;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0.8rem 2rem 0.8rem 0;
+  width: 25%;
 }
 
 .input-field {
-    text-align: center;
-    border-radius: 30px;
-    border: 2px solid #FFF;
-    padding: 15px; 
-    width: 200px;
-    height: 15px;
-    width: 100%;   
-    margin: 5px 0; 
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  padding: 15px; 
+  width: 20rem;
+  height: 15px;
+  width: 100%;   
+  margin: 0.5rem 0; 
 }
 
 .card {
@@ -102,7 +109,7 @@ article, footer, main, aside, header {
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 20px;
   list-style: none;
@@ -153,6 +160,10 @@ article, footer, main, aside, header {
   border-radius: 50%;
 }
 
+.marginright10px {
+  margin-right: 10px;
+}
+
 .margin0 {
   margin: 0;
 }
@@ -173,6 +184,10 @@ article, footer, main, aside, header {
   width: 30%;
 }
 
+.image {
+  margin: 10px 0;
+}
+
 .xcenter {
     display: flex;
     justify-content: center;
@@ -187,7 +202,8 @@ article, footer, main, aside, header {
 .popup {
   position: fixed;
   font-family: monospace;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
   opacity: 1;
   padding: 20px;
   border-radius: 10px;
@@ -198,4 +214,26 @@ article, footer, main, aside, header {
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7); /* Black shadow with blur */
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 7px;
+  }
+
+  article, footer, main, aside, header {
+    padding: 0 5vw;  
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .width30 {
+    width: 100%;
+  }
+
+  .width70 {
+    width: 100%;
+  }
 }

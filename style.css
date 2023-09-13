@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -11,7 +12,6 @@ body {
 
 p, ul {
   margin: 5px 0;
-  width: inherit;
 }
 
 div {
@@ -24,7 +24,7 @@ a, a:visited, a:active, a:link {
   font-weight: 400;
 }
 
-article, footer, form, aside {
+article, footer, main, aside, header {
     display: flex;
     color: #FFF;
     margin: 0;
@@ -149,12 +149,28 @@ article, footer, form, aside {
   display: none;
 }
 
+.circular-border {
+  border-radius: 49%;
+}
+
+.margin0 {
+  margin: 0;
+}
+
 .my10vh {
     margin: 10vh 0;
 }
 
 .mbot15px {
     margin-bottom: 15px;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.width30 {
+  width: 30%;
 }
 
 .xcenter {

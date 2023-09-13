@@ -3,8 +3,19 @@
     box-sizing: border-box;
 }
 
+body {
+  background: #0d101a;
+  padding: 5vh 0;
+  min-height: 100vh;
+}
+
 p, ul {
   margin: 5px 0;
+  width: inherit;
+}
+
+div {
+  width: inherit;
 }
 
 a, a:visited, a:active, a:link {
@@ -13,11 +24,9 @@ a, a:visited, a:active, a:link {
   font-weight: 400;
 }
 
-body {
+article, footer, form, aside {
     display: flex;
     color: #FFF;
-    background: #0d101a;
-    min-height: 100vh;
     margin: 0;
     padding: 0 30vw;
     align-items: center;
@@ -27,7 +36,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 15px;
 }
 
 .row {
@@ -41,6 +49,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     margin: 10px 0;
+    width: inherit;
 }
 
 .title {
@@ -84,7 +93,7 @@ body {
 /* CSS */
 .submit-button {
   appearance: none;
-  background-color: #f8f9fa;
+  background-color: #e1d0d0;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
@@ -142,6 +151,10 @@ body {
 
 .my10vh {
     margin: 10vh 0;
+}
+
+.mbot15px {
+    margin-bottom: 15px;
 }
 
 .xcenter {

@@ -24,6 +24,11 @@ div {
   width: inherit;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 a, a:visited, a:active, a:link {
   font-size: 1.8rem;
   color: #007bff;
@@ -55,7 +60,7 @@ article, footer, form, aside, header {
   color: #FFF;
   font-size: 4rem;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 1rem 0;
   width: inherit;
 }
 
@@ -178,6 +183,10 @@ article, footer, form, aside, header {
 
 .width70 {
   width: 70%;
+}
+
+.width50 {
+  width: 50%;
 }
 
 .width30 {

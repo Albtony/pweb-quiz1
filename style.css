@@ -31,7 +31,7 @@ a, a:visited, a:active, a:link {
   font-weight: 400;
 }
 
-article, footer, main, aside, header {
+article, footer, form, aside, header {
   display: flex;
   color: #FFF;
   margin: 0;

@@ -12,103 +12,105 @@
     <header class="column">
         <p class="headtitle">Formulir Registrasi</p>
     </header>
-    <main class="column">
-        <div id="peserta" class="column mbot15px">
-            <p class="title">Peserta</p>
-            <div class="row">
-                <p class="field-name">Nama</p>
-                <input id="nama" type="text" class="input-field" placeholder="Nama dan Gelar Peserta">    
+    <main>
+        <form class="column">
+            <div id="peserta" class="column mbot15px">
+                <p class="title">Peserta</p>
+                <div class="row">
+                    <p class="field-name">Nama</p>
+                    <input id="nama" type="text" class="input-field" placeholder="Nama dan Gelar Peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Asal Instansi</p>
+                    <input id="instansi" type="text" class="input-field" placeholder="Asal instansi peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Alamat</p>
+                    <input id="alamat" type="text" class="input-field" placeholder="Alamat peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Kode Pos</p>
+                    <input id="kodepos" type="text" class="input-field" placeholder="Kodepos peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">No. Telepon</p>
+                    <input id="noTelp" type="text" class="input-field" placeholder="Nomor Telepon Peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Email</p>
+                    <input id="email" type="text" class="input-field" placeholder="Alamat Email Peserta">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Sponsor</p>
+                    <input id="sponsor" type="text" class="input-field" placeholder="Sponsor Peserta">    
+                </div>
             </div>
-            <div class="row">
-                <p class="field-name">Asal Instansi</p>
-                <input id="instansi" type="text" class="input-field" placeholder="Asal instansi peserta">    
+            <div id="perusahaan" class="column mbot15px">
+                <p class="title">Perusahaan</p>
+                <div class="row">
+                    <p class="field-name">Nama</p>
+                    <input id="namaP" type="text" class="input-field" placeholder="Nama Perusahaan">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Alamat</p>
+                    <input id="alamatP" type="text" class="input-field" placeholder="Alamat Perusahaan">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Kontak</p>
+                    <input id="kontakP" type="text" class="input-field" placeholder="Nama Kontak Personal">    
+                </div>
+                <div class="row">
+                    <p class="field-name">No. Telepon</p>
+                    <input id="noTelpP" type="text" class="input-field" placeholder="Nomor Telepon Personal">    
+                </div>
+                <div class="row">
+                    <p class="field-name">Email</p>
+                    <input id="emailP" type="text" class="input-field" placeholder="Alamat Email Perusahaan">    
+                </div>
             </div>
-            <div class="row">
-                <p class="field-name">Alamat</p>
-                <input id="alamat" type="text" class="input-field" placeholder="Alamat peserta">    
+            <div class="align-right">
+                <button type="submit" class="submit-button" onclick="submitf()">Daftar</button>
             </div>
-            <div class="row">
-                <p class="field-name">Kode Pos</p>
-                <input id="kodepos" type="text" class="input-field" placeholder="Kodepos peserta">    
-            </div>
-            <div class="row">
-                <p class="field-name">No. Telepon</p>
-                <input id="noTelp" type="text" class="input-field" placeholder="Nomor Telepon Peserta">    
-            </div>
-            <div class="row">
-                <p class="field-name">Email</p>
-                <input id="email" type="text" class="input-field" placeholder="Alamat Email Peserta">    
-            </div>
-            <div class="row">
-                <p class="field-name">Sponsor</p>
-                <input id="sponsor" type="text" class="input-field" placeholder="Sponsor Peserta">    
-            </div>
-        </div>
-        <div id="perusahaan" class="column mbot15px">
-            <p class="title">Perusahaan</p>
-            <div class="row">
-                <p class="field-name">Nama</p>
-                <input id="namaP" type="text" class="input-field" placeholder="Nama Perusahaan">    
-            </div>
-            <div class="row">
-                <p class="field-name">Alamat</p>
-                <input id="alamatP" type="text" class="input-field" placeholder="Alamat Perusahaan">    
-            </div>
-            <div class="row">
-                <p class="field-name">Kontak</p>
-                <input id="kontakP" type="text" class="input-field" placeholder="Nama Kontak Personal">    
-            </div>
-            <div class="row">
-                <p class="field-name">No. Telepon</p>
-                <input id="noTelpP" type="text" class="input-field" placeholder="Nomor Telepon Personal">    
-            </div>
-            <div class="row">
-                <p class="field-name">Email</p>
-                <input id="emailP" type="text" class="input-field" placeholder="Alamat Email Perusahaan">    
-            </div>
-        </div>
-        <div class="align-right">
-            <button type="submit" class="submit-button" onclick="submitf()">Daftar</button>
-        </div>
-    </main>
-    <article class="column">
-        <div id="instruksi-kontribusi" class="column" style="margin-top: 20px;">
-            <p>Kontribusi peserta Rp. 2.500.000,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi</p>
-            <p>Konfirmasi Kepesertaan:</p>
-            <ul>
-                <li> Sebelum 15 Januari 2024: Rp. 2.500.000,-
-                <li> Sesudah 15 Januari 2024: Rp. 2.750.000,-
-                <li> On-site: Rp. 2.750.000,-
-            </ul>
-            <p>Pembatalan Pendaftaran:</p>
-            <ul>
-                <li> Sebelum H-5 uang dikembalikan 50%
-                <li> Sesudah H-5 uang tidak dapat dikembalikan
-            </ul>
-            <p>Akomodasi penginapan peserta, harga kamar kelas standar berkidsar antara Rp. 250.000,- — Rp. 300.000,-</p>
-            <strong>
-                <p>Pendaftaran Via transfer Bank Ke:</p>
+        </form>
+        <article class="column">
+            <div id="instruksi-kontribusi" class="column" style="margin-top: 20px;">
+                <p>Kontribusi peserta Rp. 2.500.000,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi</p>
+                <p>Konfirmasi Kepesertaan:</p>
                 <ul>
-                    <li> Nama Bank: Bank BCA KCU Cirebon
-                    <li> No. Rekening: 1341015478
-                    <li> Atas Nama: Junaedi, S.Kep
+                    <li> Sebelum 15 Januari 2024: Rp. 2.500.000,-
+                    <li> Sesudah 15 Januari 2024: Rp. 2.750.000,-
+                    <li> On-site: Rp. 2.750.000,-
                 </ul>
-            </strong>
-        </div>
-    </article>
-    <aside class="column">
-        <div id="instruksi-pembayaran" class="card row">
-            <div class="width70 marginright10px">
-                <p>Bukti transer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskesma Sitopeng</p>
-                <p>Alamat:</p>
-                <p>Jl. Sekarsari No.1 Argasurya Harjamukti Kota Cirebon atau kirim ke email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=entreprenurse41@gmail.com&su=Bukti Transfer Registrasi&body=">entreprenurse41@gmail.com</a></p>
-                <p>Konfirmasi setelah transfer ke +62818242869</p>
+                <p>Pembatalan Pendaftaran:</p>
+                <ul>
+                    <li> Sebelum H-5 uang dikembalikan 50%
+                    <li> Sesudah H-5 uang tidak dapat dikembalikan
+                </ul>
+                <p>Akomodasi penginapan peserta, harga kamar kelas standar berkidsar antara Rp. 250.000,- — Rp. 300.000,-</p>
+                <strong>
+                    <p>Pendaftaran Via transfer Bank Ke:</p>
+                    <ul>
+                        <li> Nama Bank: Bank BCA KCU Cirebon
+                        <li> No. Rekening: 1341015478
+                        <li> Atas Nama: Junaedi, S.Kep
+                    </ul>
+                </strong>
             </div>
-            <div class="width30 image">
-                <img class="circular-border" src=".//assets/lokasi-map.jpg" alt="lokasi map kantor" width="100%">
-            </div>
-        </div>  
-    </aside>
+        </article>
+        <aside class="column">
+            <div id="instruksi-pembayaran" class="card row">
+                <div class="width70 marginright10px">
+                    <p>Bukti transer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskesma Sitopeng</p>
+                    <p>Alamat:</p>
+                    <p>Jl. Sekarsari No.1 Argasurya Harjamukti Kota Cirebon atau kirim ke email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=entreprenurse41@gmail.com&su=Bukti Transfer Registrasi&body=">entreprenurse41@gmail.com</a></p>
+                    <p>Konfirmasi setelah transfer ke +62818242869</p>
+                </div>
+                <div class="width30 image">
+                    <img class="circular-border" src=".//assets/lokasi-map.jpg" alt="lokasi map kantor" width="100%">
+                </div>
+            </div>  
+        </aside>
+    </main>
     <footer class="column">
         <p class="align-right">&copy Nuzul Abatony</p>
     </footer>

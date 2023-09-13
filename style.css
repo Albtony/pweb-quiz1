@@ -150,7 +150,7 @@ article, footer, main, aside, header {
 }
 
 .circular-border {
-  border-radius: 49%;
+  border-radius: 50%;
 }
 
 .margin0 {
@@ -181,4 +181,5 @@ article, footer, main, aside, header {
 .align-right {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }

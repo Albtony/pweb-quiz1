@@ -1,3 +1,10 @@
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Your form processing logic here
+    submitf();
+});
+
 window.submitf = () => {
     const getValue = function(id) {
         const elem = document.getElementById(id);

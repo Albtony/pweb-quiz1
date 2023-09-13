@@ -33,19 +33,19 @@ window.submitf = () => {
 }
 
 window.isPhoneNumber = (number) => {
-    if(/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/.test(number)) {
-        alert(`Please recheck your phone number`);
+    if(/\+?([ -]?\d+)+|\(\d+\)([ -]\d+)/.test(number)) 
         return true;
-    }
+    alert(`Please recheck your phone number`);
     return false;
 }
 
 window.isInputBlank = (object) => {
-    for (const field in object) {
-        if(object.field == null) {
-            alert(`Please fill out the blank`);
+    for (const [key, value] of Object.entries(object)) {
+        console.log(`${key}: ${value}`);
+        if(value == null) {
+            alert(`Please fill out the blanks`)
             return true;
-        } 
-        return false;
+        }
     }
+    return false;
 }
